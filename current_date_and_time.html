@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        To find current day,date and time
+    </title>
+    <body>
+        <h1>Time And Date</h1>
+		<hr color="purple">
+        <p id="demo">
+        <script>
+            const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            var currentdate = new Date();
+            var date=currentdate.getDate()
+            var Month = currentdate.getMonth();
+            var Year=currentdate.getFullYear();
+            var day=currentdate.getDay();
+            var dayofweek=days[currentdate.getDay()];
+            var hours=currentdate.getHours();
+            var minutes=currentdate.getMinutes();
+            var seconds=currentdate.getSeconds();
+            document.getElementById("demo").innerHTML="Current day : "+dayofweek+"("+day+")"+"<br>"+" Current date : "+
+            date+" / "+Month+" / "+Year+"<br>"+"Time is : "+hours+" : "+minutes+" : "+seconds;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form id="demo">
+            Username
+            <input type="text" name="username">
+            <br><br>
+            Password
+            <input type="password" name="password">
+            <br><br>
+            <button onclick="myFunction()" >submit</button>
+        </form>
+        <script>
+            function myFunction()
+            {
+                let txt;
+                if(confirm("Press a button to confirm authorisation"))
+                {
+                    alert("You have successfully confirmed");
+                }
+                else
+                {
+                    alert("You pressed cancel");
+                }
+            }
+            document.getElementById("demo").innerHTML;
+        </script>
+    </body>
+</html>

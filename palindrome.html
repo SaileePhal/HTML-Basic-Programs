@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>
+       check for palindrome
+    </title>
+    <body>
+        <h1>Checking for Palindrome </h1>
+        <p id="demo"></p>
+        <script>
+                const str=prompt("Enter string : ");
+                const reversedstr = Array.from(str).reverse().join("");
+                if(str==reversedstr)
+                {
+                   alert(str+" is a palindrome");
+                }
+                else
+                {
+                    alert(str+" not a palindrome");
+                }
+               document.getElementById("demo").innerHTML;
+        </script>
+    </body>
+</html>    
